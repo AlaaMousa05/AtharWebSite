@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+           pri:{
+            500:"#da373d"
+           },
+           sec:{
+            100:"#f1f1f1",
+            200:"#ccc",
+            300:"#777",
+            400:"#333",
+            800:"#211f1d",
+           },
+           white:"#fff",
+           green:"#3FDBA9",
+           blue:"#385CC4",
+           yellow:"#FFB13C",
+          },
+        },
+      },
+    };
+  </script>
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <title>Dashboard </title>
+
+    
+</head>
+<body >
+    <div class="flex h-screen overflow-y-hidden">
+      <div class="w-60 bg-sec-800 p-4 text-white">
+        <h2 class="text-2xl py-2 mb-5 font-bold text-center " style=" color: rgb(47, 235, 178);">Athar</h2>
+        <div class="flex flex-col justify-between" style="height: calc(100vh - 100px);">
+          <div>
+            <div class="flex items-center gap-2 p-2 hover:bg-gradient-to-r from-purple-500 to-pink-500 cursor-pointer rounded-md">
+              <i class="ri-dashboard-line text-lg"></i> <p>Dashboard</p>
+            </div>
+            <div class="flex items-center gap-2 p-2 hover:bg-gradient-to-r from-purple-500 to-pink-500 cursor-pointer rounded-md">
+              <i class="ri-pie-chart-line text-lg"></i> <p>Orders</p>
+            </div>
+            <div class="flex items-center gap-2 p-2 bg-gradient-to-r from-purple-500 to-pink-500 cursor-pointer rounded-md">
+              <i class="ri-file-list-2-line text-lg"></i> <p>Task list</p>
+            </div>
+            <div class="flex items-center gap-2 p-2 hover:bg-gradient-to-r from-purple-500 to-pink-500 cursor-pointer rounded-md">
+              <i class="ri-expand-left-right-line text-lg"></i> <p>Services</p>
+            </div>
+            <div class="flex items-center gap-2 p-2 hover:bg-gradient-to-r from-purple-500 to-pink-500 cursor-pointer rounded-md">
+              <i class="ri-notification-3-line text-lg"></i><p>Notifications</p>
+            </div>
+            <div class="flex items-center gap-2 p-2 hover:bg-gradient-to-r from-purple-500 to-pink-500 cursor-pointer rounded-md">
+              <i class="ri-question-line text-lg"></i> <p>Help</p>
+            </div>
+          </div>
+          <div >
+            <div class="flex items-center gap-2 p-2 hover:bg-gradient-to-r from-purple-500 to-pink-500 cursor-pointer rounded-md">
+              <i class="ri-settings-3-line"></i> <p>Settings</p>
+            </div>
+            <div class="flex items-center gap-2 p-2 hover:bg-gradient-to-r from-purple-500 to-pink-500 cursor-pointer rounded-md">
+              <i class="ri-logout-box-line text-lg"></i> <p>Logout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-sec-200">
+        <div class="p-4 flex items-center justify-between bg-white">
+          <div class="  flex items-center gap-3">
+            <div class="relative h-10 w-10 rounded-full overflow-hidden">
+              <img src="image/confident-business-professional-stockcake.jpg" class="absolute top-0 left-0 w-full h-full object-cover"/>
+            </div>
+            <div>
+              <h3 class="text-xl text-sec-400">Deyaa Mousa</h3>
+              <p class="text-sec-300 -mt-2"> institution manager</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-5">
+            <div class="bg-sec-100 py-2 px-5 rounded-md mr-24"><input class="bg-inherit outline-none w-96" placeholder="Search anything.."/> </div>
+            <div class="bg-sec-100 h-10 w-10 rounded-full flex items-center justify-center"><i class="ri-notification-line"></i></div>
+            <div class="bg-sec-100 h-10 w-10 rounded-full flex items-center justify-center"><i class="ri-message-2-line"></i></i></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 p-4 gap-4 items-start">
+          <div class="col-span-2 bg-white rounded-md overflow-hidden">
+            <div>
+              <div class="flex items-center justify-between p-4 ">
+                <div>
+                  <h2 class="text-3xl font-semibold text-sec-400">
+                    Last tasks
+                  </h2>
+                  <p class="text-sec-300">
+                    <span class="font-semibold text-sec-400">124 total,</span> proceed to
+                    resolve them
+                  </p>
+                </div>
+                <div class="flex items-center gap-10">
+                  <div class="text-center">
+                    <h2 class="text-3xl font-semibold text-sec-400">55</h2>
+                    <p class="text-sec-300">Done</p>
+                  </div>
+                  <div class="text-center">
+                    <h2 class="text-3xl font-semibold text-sec-400">10</h2>
+                    <p class="text-sec-300">In progress</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" overflow-y-scroll px-4" style="height: calc(100vh - 200px);" >
+              <table class="w-full text-right">
+                <thead class="text-sec-400">
+                  <tr class="border-b">
+                    <th class="text-left">Name</th>
+                    <th>Admin</th>
+                    <th>Members</th>
+                    <th>Status</th>
+                    <th>Finish date</th>
+                  </tr>
+                </thead >
+                <tbody class="text-sec-300 ">
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left ">Sorting Orders </td>
+                    <td>
+                     Alaa
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>3</td>
+                    <td class="text-green">Done</td>
+                    <td>25/05/2024</td>
+                  </tr>
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left">Collecting donations</td>
+                    <td>
+                     Hala
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>3</td>
+                    <td class="text-blue">In progress</td>
+                    <td>25/6/2024</td>
+                  </tr>
+                  <tr class="h-10 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white">
+                    <td class="text-left">media</td>
+                    <td>
+                     Adnan
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>2</td>
+                    <td>Todo</td>
+                    <td>29/05/2024</td>
+                  </tr>
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left">Refugee Conditions</td>
+                    <td>
+                      qais
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>6</td>
+                    <td class="text-blue">In progress</td>
+                    <td>31/06/2024</td>
+                  </tr>
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left">Funder management</td>
+                    <td>
+                     Mahmoud
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>2</td>
+                    <td class="text-green">Done</td>
+                    <td>02/07/2024</td>
+                  </tr>
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left">inventory</td>
+                    <td>
+                     zeiaad
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>3</td>
+                    <td class="text-blue">In progress</td>
+                    <td>04/06/2024</td>
+                  </tr>
+                  
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left">Sending Orders</td>
+                    <td>
+                    Khaliel 
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>3</td>
+                    <td class="text-blue">In progress</td>
+                    <td>05/06/2024</td>
+                  </tr>
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left">QA initial testing</td>
+                    <td>
+                     Menna
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>12</td>
+                    <td>Todo</td>
+                    <td>11/06/2024</td>
+                  </tr>
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left">Head of finance</td>
+                    <td>
+                      jan
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>4</td>
+                    <td>Todo</td>
+                    <td>12/06/2024</td>
+                  </tr>
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left"> Management public relations</td>
+                    <td>
+                      layan
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>4</td>
+                    <td class="text-green">Done</td>
+                    <td>12/06/2024</td>
+                  </tr>
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left">Best practices</td>
+                    <td>
+                       
+                    Raghad
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>3</td>
+                    <td>Todo</td>
+                    <td>18/06/2024</td>
+                  </tr>
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left">check road conditions</td>
+                    <td>
+                      nabeel
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>2</td>
+                    <td class="text-blue">In progress</td>
+                    <td>14/06/2024</td>
+                  </tr>
+                  <tr class="h-10 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-white">
+                    <td class="text-left">Debug email varificaion</td>
+                    <td>
+                    Osama
+                        <i class="ri-message-2-line text-green"></i>
+                      </span>
+                    </td>
+                    <td>1</td>
+                    <td class="text-blue">In progress</td>
+                    <td>14/06/2024</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-md  relative  overflow-y-hidden" style="height: calc(100vh - 110px);">
+        <div class=" rounded-md bg-sec-100 m-4 py-5">
+            <div class="relative h-16 w-16  rounded-full overflow-hidden mx-auto">
+              <img src="image/confident-businessman-posing-stockcake.jpg" class="absolute w-full h-full top-0 left-0 object-cover"/> </div>
+            <h3 class="text-center font-semibold text-lg text-sec-400 mt-2">Zain</h3>
+            <p class="text-center text-sec-300 -mt-1">@donorastution</p>
+            <div class="flex items-center justify-center gap-4 mt-3">
+                <div class="bg-white h-8 w-8 rounded-full flex items-center justify-center"><i class="ri-phone-line"></i></div>
+                <div class="bg-white h-8 w-8 rounded-full flex items-center justify-center"><i class="ri-vidicon-line"></i></div>
+                <div class="bg-white h-8 w-8 rounded-full flex items-center justify-center"><i class="ri-more-2-fill"></i></div>
+            </div>  
+        </div>
+        <div class="mt-5 overflow-y-scroll px-4" style="height: calc(100vh - 400px);">
+            <div class="p-2 bg-gradient-to-r from-sky-500 to-indigo-500 text-white w-56 ml-auto rounded-md rounded-br-none mb-4">
+                Hi , how are you ?
+            </div>
+            <div class="p-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white w-56 mr-auto rounded-md rounded-bl-none mb-4">
+              Welcome, i'm fine
+            </div>
+            <div class="p-2 bg-gradient-to-r from-sky-500 to-indigo-500 text-white w-56 ml-auto rounded-md rounded-br-none mb-4">
+             I'm a philanthropist and i want to have a meeting about this .
+          </div>
+          <div class="p-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white w-56 mr-auto rounded-md rounded-bl-none mb-4">
+           Ok , any time suits you ?
+          </div>
+          <div class="p-2 bg-gradient-to-r from-sky-500 to-indigo-500 text-white w-56 ml-auto rounded-md rounded-br-none mb-4">
+           7.00 pm
+         </div>
+          <div class="p-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white w-56 mr-auto rounded-md rounded-bl-none mb-4">
+          Ok , we will meet at the company .
+          </div>
+          <div class="p-2 bg-gradient-to-r from-sky-500 to-indigo-500 text-white w-56 ml-auto rounded-md rounded-br-none mb-4">
+           that suits me.
+         </div>
+          <div class="p-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white w-56 mr-auto rounded-md rounded-bl-none mb-4">
+           nice to meet you .
+          </div>
+          <div class="p-2 bg-gradient-to-r from-sky-500 to-indigo-500 text-white w-56 ml-auto rounded-md rounded-br-none mb-4">
+           Me too , seeyou soon .
+         </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 p-2 bg-white">
+        <div class="  flex items-center bg-sec-100 p-2 gap-2   rounded-md" >
+            <i class="ri-attachment-line"></i>
+            <input class="bg-inherit w-full outline-none" placeholder="Write a message">
+            <i class="ri-user-smile-line"></i>
+            <i class="ri-mic-line"></i>
+        </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+   
+  </body>
+  <style>
+   
+    .dad {
+  color: #da373c51;
+}
+  </style>
+</html>

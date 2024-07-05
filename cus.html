@@ -1,0 +1,511 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+</head>
+<style>
+    .card-body{
+        background: -webkit-linear-gradient(90deg, #f10e42,#d8005a,#b7006b);background: linear-gradient(90deg, #f10e42,#d8005a,#b7006b);
+        
+    }
+   .card{
+    box-shadow:  0px 10px 10px rgb(100, 100, 100 , 50%) ;
+   }
+   .card-title{
+    color: beige;
+   }
+   .btn-info {
+    color: #400463;
+    font-weight: 400;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+   
+</style>
+
+
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg  bg-dark text-dark-emphasis">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"onclick="location.href='index.html'"  style="font-weight: 600; color: rgb(47, 235, 178); font-family:'Times New Roman', Times, serif; font-size: 25px;">Athar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"onclick="location.href='index.html'">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Login
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" onclick="location.href='donor.html'" > As a donor</a></li>
+              <li><a class="dropdown-item" onclick="location.href='institution.html'" >As an institution</a></li>
+              <li><a class="dropdown-item" onclick="location.href='customer.html'" >As a customer</a></li>
+              <li><hr class="dropdown-divider"></li>
+             
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Site history</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+  </nav>
+  <div class="container" >
+    <div style="margin-top: 40px;">
+    <button type="button" class="btn btn-success btn-lg " onclick="location.href='order.html' "  style="margin-top: 5px;"> Submit order </button>
+<button type="button" class="btn btn-danger btn-lg"  style="margin-top: 5px;">Cancelling order</button>
+</div>
+<hr>
+    <div class="container text-center" style="margin-top: 70px;">
+        <div class="row" style="margin-bottom: 50px;">
+          <div class="col"><div class="card" style="width: 18rem;">
+            <img src="image/fresh-produce-market-stockcake.jpg" class="card-img-top" alt="...">
+            <div class="card-body"  >
+              <h5 class="card-title">Vegetables and fruits</h5>
+              <br>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                </button>
+                <ul class="dropdown-menu" >
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">Tomato</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">option</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">Lemon</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">onion</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">lettuce</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">carrot</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">Mint</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">zaatar</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">apples</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">banana</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">Strawberry</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">watermelon</label>
+                    <br>
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                    <label class="form-check-label" for="thirdCheckbox">melon </label>
+                </ul>
+              </div>
+           
+            </div>
+          </div></div>
+          <div class="col"><div class="card" style="width: 18rem;">
+            <img src="image/butcher-at-work-stockcake.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Meat and chicken</h5>
+              <br>
+              <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Choose
+              </button>
+             
+              <ul class="dropdown-menu" >
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                  <label class="form-check-label" for="thirdCheckbox">chickens</label>
+                  <br>
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                  <label class="form-check-label" for="thirdCheckbox">beef</label>
+                  <br>
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                  <label class="form-check-label" for="thirdCheckbox">Veal</label>
+                  <br>
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                  <label class="form-check-label" for="thirdCheckbox">Turkey meat</label>
+                  <br>
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                  <label class="form-check-label" for="thirdCheckbox">Kofta</label>
+              </ul>
+            </div>
+          </div></div>
+          
+          <div class="col"><div class="card" style="width: 18rem;">
+            <img src="image/chilled-sparkling-drink-stockcake.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Drinks </h5>
+              <br>
+              <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Choose
+              </button>
+              <ul class="dropdown-menu" >
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                  <label class="form-check-label" for="thirdCheckbox">Mineral water </label>
+                  <br>
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                  <label class="form-check-label" for="thirdCheckbox">Plastic cups</label>
+                  <br>
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                  <label class="form-check-label" for="thirdCheckbox">coffee  </label>
+                  <br>
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                  <label class="form-check-label" for="thirdCheckbox">tea</label>
+                  <br>
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                  <label class="form-check-label" for="thirdCheckbox">juice</label>
+              </ul>
+            </div>
+          </div></div>
+        </div>
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col"><div class="card" style="width: 18rem;">
+              <img src="image/assorted-medical-pills-stockcake.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Drugs</h5>
+               <br>
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Acamol</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">trufen</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">antiseptic wounds</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Antibacterial</label>
+                  </ul>
+              </div>
+            </div></div>
+            <div class="col"><div class="card" style="width: 18rem;">
+              <img src="image/pediatric-care-moment-stockcake.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Health Care</h5>
+                <br>
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                 
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Abdominal pain</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Wounds</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">food poisoning</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">sensitive</label>
+                  </ul>
+              </div>
+            </div></div>
+            <div class="col"><div class="card" style="width: 18rem;">
+              <img src="image/emergency-first-aid-stockcake.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Medical tools</h5>
+                <br>
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                 
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Thermometer</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Medical Adhesive</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Blaster</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">scalpel</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">gauze</label>
+                  </ul>
+              </div>
+            </div></div>
+          </div>
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col"><div class="card" style="width: 18rem;">
+                <img src="image/organized-bathroom-shelf-stockcake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dental care products</h5>
+                  <br>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Toothbrushes</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Toothpaste</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Mouthwash</label>
+                  </ul>
+                </div>
+              </div></div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                <img src="image/washing-hands-thoroughly-stockcake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cleaning materials </h5>
+                  <br>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+               
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox"> Hand soap</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Hair soap</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Clear liquid</label>
+                  </ul>
+                </div>
+              </div></div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                <img src="image/buying-toilet-paper-stockcake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kleenex</h5>
+                  <br>
+                
+                  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Tissue paper</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Scented tissues</label>
+                  </ul>
+                </div>
+                
+              </div></div></div>
+              <div class="row" style="margin-bottom: 50px;">
+              <div class="col"><div class="card" style="width: 18rem;">
+                <img src="image/connected-office-setup-stockcake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> Internet recharge</h5>
+                  <br>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox"> recharge 3G</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">recharge 4G</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">recharge 5G</label>
+                  </ul>
+                </div>
+              </div></div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                <img src="image/mobile-payment-setup-stockcake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mobile credit</h5>
+                  <br>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">recharge 5$</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">recharge 10$</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">recharge 20$</label>
+                  </ul>
+                </div>
+              </div></div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                <img src="image/sunset-gas-station-stockcake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fuel</h5>
+                  <br>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox"> 1 liter of gasoline</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox"> 2 liter of gasoline</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox"> 3 liter of gasoline</label>
+                  </ul>
+                </div>
+              </div></div></div>
+              <div class="row" style="margin-bottom: 50px;">
+              <div class="col"><div class="card" style="width: 18rem;">
+                <img src="image/colorful-shoe-display-stockcake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">shoes</h5>
+                  <br>
+                
+                  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">kids shoes</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Youth shoes</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Elderly shoes</label>
+                  </ul>
+                </div>
+              </div></div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                <img src="image/colorful-clothes-rack-stockcake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Youth clothes</h5>
+                  <br>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                 
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">shirt</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">pajamas</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">pants</label>
+                  </ul>
+                </div>
+              </div></div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                <img src="image/shopping-for-clothes-stockcake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> children clothes</h5>
+                  <br>
+                  
+                  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">pajamas</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">dress</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">jeans</label>
+                  </ul>
+                </div>
+              </div></div>
+              
+        </div>
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col"><div class="card" style="width: 18rem;">
+              <img src="image/cozy-woolen-blankets-stockcake.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Blankets</h5>
+                <br>
+            
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Summer covers</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Winter covers</label>
+                  </ul>
+              </div>
+            </div></div>
+            <div class="col"><div class="card" style="width: 18rem;">
+              <img src="image/children-in-shelter-stockcake.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">tents</h5>
+                <br>
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                 
+
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Big tent</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Small tent</label>
+                  </ul>
+              </div>
+            </div></div>
+            <div class="col"><div class="card" style="width: 18rem;">
+              <img src="image/elegant-bedroom-decor-stockcake.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pillowcases</h5>
+                <br>
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose
+                  </button>
+                  <ul class="dropdown-menu" >
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Cotton pads</label>
+                      <br>
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" style="margin-left: 10px;">
+                      <label class="form-check-label" for="thirdCheckbox">Pillowcases</label>
+                  </ul>
+              </div>
+            </div></div>
+            
+      </div>
+      </div>
+</div>
+</body>
+</html>
