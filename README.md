@@ -1,13 +1,14 @@
 # AtharWebSite
 #website link
 https://alaamousa05.github.io/AtharWebSite/
-# "Athar"🍀 This website focuses on providing essential needs for life in disaster-stricken countries suffering from severe famine, poverty in resources, and lack of medicines.
+## "Athar"🍀 
+### This website focuses on providing essential needs for life in disaster-stricken countries suffering from severe famine, poverty in resources, and lack of medicines.
 
-#💬Problem: 
+## 💬Problem: 
 
 Difficulty in delivering humanitarian aid to individuals in need and identifying their locations. There is also a lack of direct connection between individuals and charitable organizations to enable them to request assistance.
 
-#💭 Solution:
+## 💭 Solution:
 
 🧨Individuals in need can access the website and choose their necessities in terms of food, clothing, medicine, internet recharge, and mobile credit.
 
@@ -15,7 +16,7 @@ Difficulty in delivering humanitarian aid to individuals in need and identifying
 
 🧨Charitable organizations can access the website, build a database within it, receive assistance requests, and provide aid.
 
-#Technologies Used 🔥:
+## Technologies Used 🔥:
 
 🔹HTML: To build the structure of the website.
 🔹CSS: To design a site with unique colors and layout🎨.
