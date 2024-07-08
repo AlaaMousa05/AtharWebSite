@@ -5,7 +5,7 @@ https://alaamousa05.github.io/AtharWebSite/
 https://github.com/AlaaMousa05/AtharWebSite/assets/173834285/6ffe6b65-f43b-4d6f-9633-28866d2ebbf2
 
 ## about "Athar"🍀 
-### This website focuses on providing essential needs for life in disaster-stricken countries suffering from severe famine, poverty in resources, and lack of medicines.
+This website focuses on providing essential needs for life in disaster-stricken countries suffering from severe famine, poverty in resources, and lack of medicines.
 
 ## 💬Problem: 
 
